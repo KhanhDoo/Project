@@ -1,14 +1,16 @@
 <script setup lang="ts">
 // import { handleError } from 'vue';
-// import SocialBTN from '~/components/ui/Auth/SocialBTN.vue';
+import SocialBTN from '~/components/ui/Auth/SocialBTN.vue';
 
 
 type PAYLOAD = {
+    name: string;
     email: string;
     password: string;
 }
 
 const form = ref<PAYLOAD>({
+    name: '',
     email: '',
     password: '',
 })

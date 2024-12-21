@@ -5,5 +5,5 @@ export default defineNuxtRouteMiddleware( async () => {
 
     if(!user.value) return navigateTo('/auth/login');
 
-    if(user.value && user.value.role !== 'ADMIN')  return navigateTo('/admin');
+    if(user.value && user.value.role !== 'ADMIN')  return navigateTo('/auth/login');
 })
